@@ -1,0 +1,18 @@
+serverAddr = "home.liangc.work"
+serverPort = 7008
+auth.token = "home.liangc.work"
+
+[[proxies]]
+name = "ssl"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 443
+remotePort = 8843
+
+
+[[proxies]]
+name = "plain-http"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 88
+remotePort = 8800
